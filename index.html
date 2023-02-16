@@ -18,7 +18,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<main>
+    <div class="settings close">
+        <div class="icon">
+            <i class="fa-solid fa-gear settings-icon"></i>
+        </div>
+        <div class="options">
+            <div class="option-box">
+                <h4>colors</h4>
+                <ul class="colors">
+                    <li class="color selected" data-color = "#ff9800"></li>
+                    <li class="color" data-color = "#e91e63"></li>
+                    <li class="color" data-color = "#009688"></li>
+                    <li class="color" data-color = "#03a9f4"></li>
+                    <li class="color" data-color = "#4caf50"></li>
+                </ul>
+            </div>
+            <div class="option-box">
+                <h4>random backgrounds</h4>
+                <div class="rbButtons">
+                    <button class="yes opBtn active">yes</button>
+                    <button class="no opBtn">no</button>
+                </div>
+            </div>
+            <div class="option-box">
+                <h4>show bullets</h4>
+                <div class="sbButtons">
+                    <button class="yes opBtn active">yes</button>
+                    <button class="no opBtn">no</button>
+                </div>
+            </div>
+            <button class="reset">reset options</button>
+        </div>
+    </div>
+    <div class="bulletsContainer">
+        <div data = "About Us">
+            <a href="#About"></a>
+        </div>
+        <div data = "Our Skills">
+            <a href="#Skills"></a>
+        </div>
+        <div data = "Our Gallery">
+            <a href="#Gallery"></a>
+        </div>
+        <div data = "Timeline">
+            <a href="#Timeline"></a>
+        </div>
+        <div data = "Features">
+            <a href="#Features"></a>
+        </div>
+        <div data = "Testimonials">
+            <a href="#Testimonials"></a>
+        </div>
+    </div>
+    <section id="landing">
+        <div class="overlay"></div>
+        <nav>
+            <div class="nav-container container">
+                <div class="navbar">
+                    <span class="header">special design</span>
+                    <div class="links-container">
+                        <ul class="links">
+                            <li>
+                                <a href="#About">about</a>
+                            </li>
+                            <li>
+                                <a href="#Skills">skills</a>
+                            </li>
+                            <li>
+                                <a href="#Gallery">gallery</a>
+                            </li>
+                            <li>
+                                <a href="#Timeline">timeline</a>
+                            </li>
+                            <li>
+                                <a href="#Features">features</a>
+                            </li>
+                            <li>
+                                <a href="#Testimonials">testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="text">
+            <h1>we are <span>creative</span> agency</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+        </div>
+    </section>
+</main>
 <script src="JS/JS.js" async></script>
 <script src="JS/all.min.js"></script>
 </body>
