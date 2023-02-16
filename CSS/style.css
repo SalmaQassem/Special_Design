@@ -10,7 +10,6 @@ body {
 }
 /*Components*/
 .container {
-    width: 1170px;
     padding: 0 15px;
     margin: auto;
 }
@@ -231,6 +230,7 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    position: relative;
     z-index: 2;
 }
 .header {
@@ -249,16 +249,66 @@ body {
     padding-left: 0;
     text-transform: capitalize;
 }
+@media (max-width: 991px) {
+    .links {
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    .links.open {
+        width: 100%;
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 50px;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: left;
+    }
+    .links.open::before {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: -19px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #ffffff transparent;
+    }
+}
 .links li {
     display: inline-block;
     margin-left: 10px;
+}
+.links.open li {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
 }
 .links a {
     color: #ffffff;
     text-decoration: none;
 }
+.links.open a{
+    color: var(--mainColor);
+}
 .links a:hover {
     color: var(--mainColor);
+}
+.toggleMenu {
+    width: 40px;
+    margin: 0 0 0 auto;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+@media (max-width: 991px) {
+    .toggleMenu {
+        display: inline-block;
+    }
 }
 /*End Navbar*/
 
@@ -271,20 +321,34 @@ body {
     text-align: center;
     color: #ffffff;
     z-index: 2;
-    width: 100%;
+    width: 90%;
 }
 .text h1 {
     text-transform: capitalize;
     font-size: 34px;
     margin: 0 0 12px;
 }
+@media (max-width: 575.9px) {
+    .text h1 {
+        font-size: 26px;
+    }
+}
 .text h1 span {
     color: var(--mainColor);
 }
 .text p {
     margin: 0;
-    font-size: 20px;
     line-height: 1.6;
+}
+@media (min-width: 768px) {
+    .text p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 767.9px) and (min-width: 576px){
+    .text p {
+        font-size: 18px;
+    }
 }
 /*End Text*/
 

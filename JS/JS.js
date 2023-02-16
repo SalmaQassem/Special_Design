@@ -10,6 +10,8 @@ let sbYesBtn = document.querySelector(".sbButtons .yes");
 let sbNoBtn = document.querySelector(".sbButtons .no");
 let bullets = document.querySelector(".bulletsContainer");
 let resetBtn = document.querySelector(".reset");
+let toggle = document.querySelector(".toggleMenu");
+let navBar = document.querySelector(".links");
 /*End Global Variables*/
 
 /*Start Functions*/
@@ -136,6 +138,16 @@ resetBtn.addEventListener("click", ()=>{
     window.localStorage.removeItem("sbBtn");
     window.location.reload();
 });
+
+//Open toggle menu
+toggle.addEventListener("click", ()=>{
+    if(navBar.classList.contains("open")){
+        navBar.classList.remove("open");
+    }
+    else {
+        navBar.classList.add("open");
+    }
+});
 /*End Event Listeners*/
 
 //restore Local Storage
@@ -156,3 +168,5 @@ if(sbYesBtn.classList.contains("active")){
 else if(sbNoBtn.classList.contains("active")){
     bullets.style.display = "none";
 }
+
+
