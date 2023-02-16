@@ -67,7 +67,7 @@ function startRandomBackgrounds(){
     let images = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
     random = setInterval(() => {
         let randomNumber = Math.floor(Math.random() * images.length);
-        landing.style.background = `url("/images/${images[randomNumber]}")`;
+        landing.style.background = 'url("images/' + images[randomNumber] + '")';
     }, 10000);
 }
 /*End Functions*/
