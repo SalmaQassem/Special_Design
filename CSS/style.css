@@ -208,7 +208,7 @@ body {
 
 /*Start Landing*/
 #landing {
-    background: url("/images/01.jpg");
+    background-image: url("../images/01.jpg");
     background-size: cover;
     min-height: 100vh;
     position: relative;
