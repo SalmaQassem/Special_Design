@@ -186,9 +186,9 @@ window.addEventListener("scroll", ()=>{
     let skillsHeight = skillsSection.offsetHeight;
     let windowHeight = this.innerHeight;
     let windowScrollTop = this.pageYOffset;
-    if(windowScrollTop + 1 >= (offsetTop + skillsHeight - windowHeight)) {
+    if(windowScrollTop >= (offsetTop + skillsHeight - windowHeight)) {
         for(let i = 0; i < progressBars.length; i++){
-            progressBars[i].style.width += progressBars[i].getAttribute("progress");
+            progressBars[i].style.width = progressBars[i].getAttribute("progress");
         }
     }
 });
