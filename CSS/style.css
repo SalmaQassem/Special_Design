@@ -1,8 +1,13 @@
 :root{
     --mainColor: #ff9800;
+    --padding: 50px 0;
+    --fontColor: #767676;
 }
 * {
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -312,7 +317,7 @@ body {
 /*End Navbar*/
 
 /*Start Text*/
-.text {
+#landing .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -322,36 +327,85 @@ body {
     z-index: 2;
     width: 90%;
 }
-.text h1 {
+#landing .text h1 {
     text-transform: capitalize;
     font-size: 34px;
     margin: 0 0 12px;
 }
 @media (max-width: 575.9px) {
-    .text h1 {
+    #landing .text h1 {
         font-size: 26px;
     }
 }
-.text h1 span {
+#landing .text h1 span {
     color: var(--mainColor);
 }
-.text p {
+#landing .text p {
     margin: 0;
     line-height: 1.6;
 }
 @media (min-width: 768px) {
-    .text p {
+    #landing .text p {
         font-size: 20px;
     }
 }
 @media (max-width: 767.9px) and (min-width: 576px){
-    .text p {
+    #landing .text p {
         font-size: 18px;
     }
 }
 /*End Text*/
 
 /*End Landing*/
+#About {
+    padding: var(--padding);
+}
+.about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+    .about-us {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+#About .text {
+    padding: 30PX;
+    flex: 1;
+}
+@media (max-width: 767px) {
+    #About .text {
+        padding: 0;
+        text-align: center;
+    }
+}
+@media (max-width: 575.9px){
+    #About .text {
+        width: 90%;
+    }
+}
+#About .text h2 {
+    font-size: 30px;
+    color: var(--mainColor);
+    margin: 0 0 10px;
+}
+#About .text p {
+    margin: 0;
+    line-height: 1.8;
+    color: var(--fontColor);
+}
+#About .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About .image img {
+    width: 250px;
+}
+/*Start About Us Section*/
+
 
 /*Start Animation*/
 @keyframes spin {
