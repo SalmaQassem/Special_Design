@@ -295,7 +295,7 @@ body {
 .links a:hover {
     color: var(--mainColor);
 }
-.toggleMenu {
+.toggleButton {
     width: 40px;
     margin: 0 0 0 auto;
     font-size: 30px;
@@ -303,10 +303,9 @@ body {
     text-align: center;
     display: none;
     cursor: pointer;
-    position: relative;
 }
 @media (max-width: 991px) {
-    .toggleMenu {
+    .toggleButton {
         display: inline-block;
     }
 }

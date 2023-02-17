@@ -10,8 +10,12 @@ let sbYesBtn = document.querySelector(".sbButtons .yes");
 let sbNoBtn = document.querySelector(".sbButtons .no");
 let bullets = document.querySelector(".bulletsContainer");
 let resetBtn = document.querySelector(".reset");
-let toggle = document.querySelector(".toggleMenu");
+let toggleBtn = document.querySelector(".toggleButton");
 let navBar = document.querySelector(".links");
+let links = navBar.querySelectorAll("li");
+//console.log(links);
+let linksArr = Array.from(links);
+//console.log(linksArr);
 /*End Global Variables*/
 
 /*Start Functions*/
@@ -71,6 +75,10 @@ function startRandomBackgrounds(){
         let randomNumber = Math.floor(Math.random() * images.length);
         landing.style.backgroundImage = 'url("images/' + images[randomNumber] + '")';
     }, 10000);
+}
+
+function compare(elem){
+
 }
 /*End Functions*/
 
@@ -140,12 +148,23 @@ resetBtn.addEventListener("click", ()=>{
 });
 
 //Open toggle menu
-toggle.addEventListener("click", ()=>{
+toggleBtn.addEventListener("click", (e)=>{
+    e.stopPropagation();
     if(navBar.classList.contains("open")){
         navBar.classList.remove("open");
     }
     else {
         navBar.classList.add("open");
+    }
+});
+
+//Click anywhere outside toggle menu and toggle button to close
+document.addEventListener("click", (e)=>{
+    let check = linksArr.filter((link) => link === e.target);
+    if(e.target !== navBar && e.target !== toggleBtn && check.length === 0){
+        if(navBar.classList.contains("open")){
+            navBar.classList.remove("open");
+        }
     }
 });
 /*End Event Listeners*/
