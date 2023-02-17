@@ -2,6 +2,7 @@
     --mainColor: #ff9800;
     --padding: 50px 0;
     --fontColor: #767676;
+    --backgroundColor: #eeeeee;
 }
 * {
     box-sizing: border-box;
@@ -55,6 +56,11 @@ body {
 }
 .yes.active , .no.active {
     opacity: 1;
+}
+.head h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    color: var(--mainColor);
 }
 /*Start Settings Box*/
 .settings {
@@ -357,6 +363,8 @@ body {
 /*End Text*/
 
 /*End Landing*/
+
+/*Start About Us Section*/
 #About {
     padding: var(--padding);
 }
@@ -370,27 +378,25 @@ body {
         align-content: center;
     }
 }
-#About .text {
+#About .head {
     padding: 30PX;
     flex: 1;
 }
 @media (max-width: 767px) {
-    #About .text {
+    #About .head {
         padding: 0;
         text-align: center;
     }
 }
 @media (max-width: 575.9px){
-    #About .text {
+    #About .head {
         width: 90%;
     }
 }
-#About .text h2 {
-    font-size: 30px;
-    color: var(--mainColor);
+#About .head h2 {
     margin: 0 0 10px;
 }
-#About .text p {
+#About .head p {
     margin: 0;
     line-height: 1.8;
     color: var(--fontColor);
@@ -403,8 +409,72 @@ body {
 }
 #About .image img {
     width: 250px;
+    height: auto;
 }
-/*Start About Us Section*/
+/*End About Us Section*/
+
+/*Start Skills Section*/
+#Skills {
+    padding: var(--padding);
+    background-color: var(--backgroundColor);
+    text-align: center;
+}
+#Skills .head h2 {
+    margin: 0 0 50px;
+}
+.mySkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-box {
+    padding: 15px;
+    margin: 0 0 15px;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .skill-box {
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+    .skill-box {
+        width: 90%;
+    }
+}
+.skill-box .skill-name {
+    width: 140px;
+    font-weight: bold;
+    line-height: 30px;
+}
+@media (max-width: 767px) {
+    .skill-box .skill-name {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.skill-box .bar {
+    width: 100%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: var(--backgroundColor);
+    position: relative;
+    overflow: hidden;
+}
+.skill-box .bar span {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: var(--mainColor);
+    transition: 0.7s;
+    transition-timing-function: linear;
+}
+/*End Skills Section*/
 
 
 /*Start Animation*/

@@ -1,4 +1,6 @@
 /*Start Global Variables*/
+
+//**********Start Landing page variables**********
 let settingsOptions = document.querySelector(".settings");
 let settingsIconContainer = document.querySelector(".icon");
 let colors = document.querySelectorAll(".color");
@@ -13,12 +15,19 @@ let resetBtn = document.querySelector(".reset");
 let toggleBtn = document.querySelector(".toggleButton");
 let navBar = document.querySelector(".links");
 let links = navBar.querySelectorAll("li");
-//console.log(links);
 let linksArr = Array.from(links);
-//console.log(linksArr);
+//**********End Landing page variables**********
+
+//**********Start Skills variables**********
+let skillsSection = document.getElementById("Skills");
+let progressBars = document.querySelectorAll(".skill-box .bar span");
+//**********End Skills variables**********
+
 /*End Global Variables*/
 
 /*Start Functions*/
+
+//**********Start Landing Page Functions**********
 function restoreLocalStorageValues() {
     restoreColor();
     restoreSelectedButtons();
@@ -77,12 +86,13 @@ function startRandomBackgrounds(){
     }, 10000);
 }
 
-function compare(elem){
+//**********End Landing Page Functions**********
 
-}
 /*End Functions*/
 
 /*Start Event Listeners*/
+
+//**********Start Landing Page Event Listeners**********
 //Show or Hide settings-box when icon is clicked & spin the settings icon
 settingsIconContainer.addEventListener("click", () => {
     if(settingsOptions.classList.contains("close")) {
@@ -167,10 +177,30 @@ document.addEventListener("click", (e)=>{
         }
     }
 });
+
+//**********End Landing Page Event Listeners**********
+
+//**********Start Skills Event Listeners**********
+window.addEventListener("scroll", ()=>{
+    let offsetTop = skillsSection.offsetTop;
+    let skillsHeight = skillsSection.offsetHeight;
+    let windowHeight = this.innerHeight;
+    let windowScrollTop = this.pageYOffset;
+    if(windowScrollTop >= (offsetTop + skillsHeight - windowHeight)) {
+        for(let i = 0; i < progressBars.length; i++){
+            progressBars[i].style.width += progressBars[i].getAttribute("progress");
+        }
+    }
+});
+//**********End Skills Event Listeners**********
+
 /*End Event Listeners*/
 
+/*Start Main*/
 //restore Local Storage
 restoreLocalStorageValues();
+
+//**********Start Landing Page**********
 
 //Set Random Background for Landing Page
 if(rbYesBtn.classList.contains("active")){
@@ -187,5 +217,13 @@ if(sbYesBtn.classList.contains("active")){
 else if(sbNoBtn.classList.contains("active")){
     bullets.style.display = "none";
 }
+//**********End Landing Page**********
+
+//**********Start Skills**********
+
+//**********End Skills**********
+
+/*End Main*/
+
 
 
