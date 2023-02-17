@@ -23,6 +23,13 @@ let skillsSection = document.getElementById("Skills");
 let progressBars = document.querySelectorAll(".skill-box .bar span");
 //**********End Skills variables**********
 
+//**********Start Gallery variables**********
+let images = document.querySelectorAll("#Gallery .image > img");
+let fullImage = document.querySelectorAll("#Gallery .full-image");
+let overlay = document.querySelectorAll("#Gallery .image-overlay");
+let closeBtn = document.querySelectorAll("#Gallery .full-image .close");
+//**********End Gallery variables**********
+
 /*End Global Variables*/
 
 /*Start Functions*/
@@ -194,6 +201,20 @@ window.addEventListener("scroll", ()=>{
 });
 //**********End Skills Event Listeners**********
 
+//**********Start Gallery Event Listeners**********
+for(let i = 0; i < images.length; i++){
+    images[i].addEventListener("click", ()=>{
+        fullImage[i].classList.add("open");
+        overlay[i].classList.add("open");
+    });
+}
+for(let i = 0; i < closeBtn.length; i++){
+    closeBtn[i].addEventListener("click", ()=>{
+        fullImage[i].classList.remove("open");
+        overlay[i].classList.remove("open");
+    });
+}
+//**********End Gallery Event Listeners**********
 /*End Event Listeners*/
 
 /*Start Main*/

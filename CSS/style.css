@@ -61,6 +61,7 @@ body {
     text-transform: capitalize;
     font-size: 30px;
     color: var(--mainColor);
+    margin: 0 0 50px;
 }
 /*Start Settings Box*/
 .settings {
@@ -419,9 +420,6 @@ body {
     background-color: var(--backgroundColor);
     text-align: center;
 }
-#Skills .head h2 {
-    margin: 0 0 50px;
-}
 .mySkills {
     display: flex;
     flex-direction: column;
@@ -476,6 +474,76 @@ body {
 }
 /*End Skills Section*/
 
+/*Start Gallery Section*/
+#Gallery {
+    padding: var(--padding);
+    text-align: center;
+}
+#Gallery .images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#Gallery .image {
+    width: 200px;
+    border: 3px solid #f6f6f6;
+    outline: 1px solid #cccccc;
+    margin: 8px;
+}
+#Gallery .image > img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#Gallery .full-image {
+    display: none;
+}
+#Gallery .full-image.open {
+    display: block;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1002;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    transform: translate(-50%, -50%);
+}
+#Gallery .full-image.open h3 {
+    text-transform: capitalize;
+    margin: 0 0 20px;
+    color: var(--mainColor);
+}
+#Gallery .full-image.open img {
+    max-width: 100%;
+}
+#Gallery .full-image.open .close {
+    content: "X";
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: var(--mainColor);
+    color: #ffffff;
+    cursor: pointer;
+}
+#Gallery .image-overlay.open {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1001;
+}
+/*End Gallery Section*/
 
 /*Start Animation*/
 @keyframes spin {
