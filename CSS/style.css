@@ -545,6 +545,120 @@ body {
 }
 /*End Gallery Section*/
 
+/*Start Timeline Section*/
+#Timeline {
+    padding: var(--padding);
+    background-color: var(--backgroundColor);
+}
+#Timeline .timeline-content {
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 575.9px) {
+    #Timeline .timeline-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+#Timeline .line {
+    width: 2px;
+    height: 100%;
+    background-color: var(--mainColor);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#Timeline .year {
+    width: 50px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin: 20px auto;
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--mainColor);
+}
+#Timeline .card {
+    width: calc(50% - 25px);
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 767px) {
+    #Timeline .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+#Timeline .card::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    top: 20px;
+}
+#Timeline .card::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 3px solid var(--mainColor);
+    top: 20px;
+    z-index: 2;
+}
+@media (max-width: 767px) {
+    #Timeline .card::before,
+    #Timeline .card::after {
+        display: none;
+    }
+}
+#Timeline .card.left {
+    float: left;
+}
+#Timeline .card.left::before {
+    border-color: transparent transparent transparent #ffffff;
+    right: 0;
+    transform: translateX(100%);
+}
+#Timeline .card.left::after {
+    right: 0;
+    transform: translateX(calc(50% + 25px));
+}
+#Timeline .card.right {
+    float: right;
+}
+#Timeline .card.right::before {
+    border-color: transparent #ffffff transparent transparent;
+    left: 0;
+    transform: translateX(-100%);
+}
+#Timeline .card.right::after {
+    left: 0;
+    transform: translateX(calc(-50% - 25px));
+}
+#Timeline .clear {
+    clear: both;
+}
+#Timeline .card h3 {
+    color: var(--mainColor);
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+#Timeline .card p {
+    color: var(--fontColor);
+    line-height: 1.6;
+    margin: 0;
+}
+/*End Timeline Section*/
+
 /*Start Animation*/
 @keyframes spin {
     0% {
