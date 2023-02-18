@@ -664,10 +664,15 @@ body {
     padding: var(--padding);
     text-align: center;
 }
+#Features .features-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
 #Features .features-content .feature{
     width: calc(100% / 3);
     margin-bottom: 40px;
-    float: left;
 }
 @media (max-width: 991px) {
     #Features .features-content .feature{
@@ -705,6 +710,91 @@ body {
     width: 80%;
 }
 /*End Features Section*/
+
+/*Start Testimonials Section*/
+#Testimonials {
+    padding: 80px 0;
+    background-image: linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 50%, #333333 50%, #333333 100%);
+}
+@media (max-width: 767px) {
+    #Testimonials .head {
+        text-align: center;
+    }
+}
+#Testimonials .head h2{
+    color: #ffffff;
+    margin: 0 0 30px;
+}
+#Testimonials .testimonials-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 575.9px) {
+    #Testimonials .testimonials-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+#Testimonials .card {
+    padding: 20px;
+    background-color: #ffffff;
+    width: calc(98% / 3);
+}
+#Testimonials .card:not(:last-of-type) {
+    margin-right: 1%;
+}
+@media (max-width: 767px) {
+    #Testimonials .card {
+        width: 100%;
+        margin: 0 auto 10px;
+    }
+}
+#Testimonials .card > p {
+    color: var(--fontColor);
+    font-style: italic;
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 0 0 20px;
+}
+#Testimonials .card .card-info {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    #Testimonials .card .card-info {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+#Testimonials .card .card-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+@media (max-width: 991px) {
+    #Testimonials .card .card-info img {
+        margin: 0;
+    }
+}
+#Testimonials .card .card-info .employees {
+    text-align: center;
+}
+#Testimonials .card .card-info .employees h4 {
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+@media (max-width: 991px) {
+    #Testimonials .card .card-info .employees h4 {
+        margin-top: 14px;
+    }
+}
+#Testimonials .card .card-info .employees p {
+    margin: 0;
+    color: var(--fontColor);
+}
+/*End Testimonials Section*/
 
 /*Start Animation*/
 @keyframes spin {
