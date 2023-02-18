@@ -799,7 +799,7 @@ body {
 /*Start Contact Section*/
 #Contact {
     padding: 80px 0;
-    background-image: url("/images/contact.png");
+    background-image: url("../images/contact.png");
     background-size: cover;
     text-align: center;
     position: relative;
@@ -887,7 +887,7 @@ body {
 }
 @media (max-width: 576px) {
     #Footer{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 /*End Footer Section*/
