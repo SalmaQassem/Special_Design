@@ -39,6 +39,15 @@ body {
         max-width: 1140px;
     }
 }
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 1;
+}
 .yes, .no {
     width: 50px;
     color: #ffffff;
@@ -223,15 +232,6 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
-}
-.overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, .6);
-    z-index: 1;
 }
 /*Start Navbar*/
 .nav-container {
@@ -795,6 +795,97 @@ body {
     color: var(--fontColor);
 }
 /*End Testimonials Section*/
+
+/*Start Contact Section*/
+#Contact {
+    padding: 80px 0;
+    background-image: url("/images/contact.png");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    min-height: 600px;
+}
+#Contact .overlay {
+    background-color: rgba(255, 255, 255, .6);
+}
+#Contact .container {
+    position: relative;
+    z-index: 2;
+}
+#Contact form {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+@media (max-width: 576px) {
+    #Contact form {
+        max-width: 90%;
+    }
+}
+#Contact form .left,
+#Contact form .right {
+    width: 49%;
+}
+@media (max-width: 767px) {
+    #Contact form .left,
+    #Contact form .right {
+        width: 100%;
+    }
+}
+#Contact form input,
+#Contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    background-color: rgba(218, 218, 218, 0.19);
+}
+#Contact form input:not([type="submit"]),
+#Contact form textarea {
+    margin: 0 0 15px;
+}
+#Contact form textarea {
+    height: 150px;
+}
+#Contact form input:not([type="submit"]):focus,
+#Contact form textarea:focus {
+    outline: 1px solid var(--mainColor);
+}
+#Contact form input[type="submit"] {
+    background-color: var(--mainColor);
+    color: #ffffff;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+#Contact form input:not([type="submit"]):focus::-webkit-input-placeholder,
+#Contact form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: 0.3s;
+}
+#Contact form input:not([type="submit"]):focus::-ms-input-placeholder,
+#Contact form textarea:focus::-ms-input-placeholder {
+    opacity: 0;
+    transition: 0.3s;
+}
+#Contact form input:not([type="submit"]):focus::placeholder,
+#Contact form textarea:focus::placeholder {
+    opacity: 0;
+    transition: 0.3s;
+}
+/*End Contact Section*/
+
+/*Start Footer Section*/
+#Footer {
+    padding: 20px;
+    background-color: #333333;
+    color: #eeeeee;
+    text-transform: capitalize;
+    text-align: center;
+}
+/*End Footer Section*/
 
 /*Start Animation*/
 @keyframes spin {
