@@ -885,6 +885,11 @@ body {
     text-transform: capitalize;
     text-align: center;
 }
+@media (max-width: 576px) {
+    #Footer{
+        font-size: 13px;
+    }
+}
 /*End Footer Section*/
 
 /*Start Animation*/
