@@ -228,7 +228,7 @@ body {
 
 /*Start Landing*/
 #landing {
-    background-image: url("../images/01.jpg");
+    background-image: url("../images/01.webp");
     background-size: cover;
     min-height: 100vh;
     position: relative;
@@ -686,6 +686,7 @@ body {
 }
 #Features .features-content .feature img {
     width: 96px;
+    height: auto;
 }
 #Features .features-content .feature h4 {
     font-size: 22px;
@@ -799,7 +800,7 @@ body {
 /*Start Contact Section*/
 #Contact {
     padding: 80px 0;
-    background-image: url("../images/contact.png");
+    background-image: url("../images/contact.webp");
     background-size: cover;
     text-align: center;
     position: relative;
