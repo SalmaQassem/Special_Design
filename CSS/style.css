@@ -6,6 +6,8 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     scroll-behavior: smooth;
@@ -410,7 +412,7 @@ body {
 }
 #About .image img {
     width: 250px;
-    height: auto;
+    height: 250px;
 }
 /*End About Us Section*/
 
@@ -686,7 +688,7 @@ body {
 }
 #Features .features-content .feature img {
     width: 96px;
-    height: auto;
+    height: 96px;
 }
 #Features .features-content .feature h4 {
     font-size: 22px;
