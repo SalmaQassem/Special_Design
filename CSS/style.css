@@ -99,15 +99,15 @@ body {
     text-align: center;
     cursor: pointer;
 }
-.settings .icon.spin svg {
+.settings .icon .settings-icon {
+    width: 30px;
+    padding: 8px 0;
+}
+.settings .icon.spin .settings-icon {
     animation-name: spin;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-.settings .icon svg {
-    width: 30px;
-    padding: 8px 0;
 }
 .settings .options {
     min-height: 100%;
