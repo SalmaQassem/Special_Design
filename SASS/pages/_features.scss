@@ -1,0 +1,59 @@
+@use "../variables/colors" as *;
+@use "../variables/dimensions" as *;
+@use "../helpers/mediaQuery_mixin" as *;
+@use "../helpers/setClass_mixin" as *;
+
+#Features {
+    padding: $padding;
+    text-align: center;
+
+    .features-content {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .feature {
+            width: 100%;
+            margin-bottom: 40px;
+
+            img {
+                width: 96px;
+                height: 96px;
+            }
+
+            h4 {
+                margin: 15px 0 40px 0;
+                position: relative;
+                font-size: 22px;
+                text-transform: capitalize;
+
+                &::before {
+                    content: "";
+                    width: 40px;
+                    height: 4px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -20px;
+                    transform: translateX(-50%);
+                    background-color: $mainColor;
+                }
+            }
+
+            p {
+                width: 80%;
+                margin: 0 auto;
+                line-height: 1.7;
+                color: $fontColor;
+            }
+        }
+    }
+}
+
+@include mediaQuery($mobile_min_width) {
+    @include setClass("#Features .features-content .feature", $mobile_min_width)
+}
+
+@include mediaQuery($smallScreens_min_width) {
+    @include setClass("#Features .features-content .feature", $smallScreens_min_width)
+}

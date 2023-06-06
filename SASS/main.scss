@@ -1,0 +1,45 @@
+//Import all variables
+//@use "./variables/colors" as *;
+//@use "./variables/dimensions" as *;
+
+//Import global rules
+@use "./layout/global-rules";
+
+//Import container styles
+@use "./pages/container";
+
+//Import overlay styles
+@use "./pages/overlay";
+
+//Import settings styles
+@use "./pages/settings";
+
+//Import side bullets
+@use "./pages/sideBullets";
+
+//Import landing
+@use "./pages/landing";
+
+//Import About
+@use "./pages/about";
+
+//Import Skills
+@use "./pages/skill";
+
+//Import Gallery
+@use "./pages/gallery";
+
+//Import Timeline
+@use "./pages/timeline";
+
+//Import Features
+@use "./pages/features";
+
+//Import Testimonials
+@use "./pages/testimonials";
+
+//Import Contact
+@use "./pages/contact";
+
+//Import Footer
+@use "./pages/footer";

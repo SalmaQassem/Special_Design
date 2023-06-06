@@ -1,0 +1,17 @@
+@use "../variables/colors" as *;
+@use "../variables/dimensions" as *;
+@use "../helpers/mediaQuery_mixin" as *;
+@use "../helpers/setClass_mixin" as *;
+
+#Footer {
+    padding: 20px;
+    background-color: #333333;
+    color: #eeeeee;
+    font-size: 12px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@include mediaQuery($mobile_min_width) {
+    @include setClass("#Footer", $mobile_min_width)
+}

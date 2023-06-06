@@ -1,0 +1,127 @@
+@use "../variables/colors" as *;
+@use "../variables/dimensions" as *;
+@use "../helpers/mediaQuery_mixin" as *;
+@use "../helpers/setClass_mixin" as *;
+
+#Timeline {
+    padding: $padding;
+    background-color: $backgroundColor;
+
+    .timeline-content {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+
+        .line {
+            width: 2px;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            z-index: 1;
+            background-color: $mainColor;
+        }
+
+        .year {
+            width: 50px;
+            padding: 2px 5px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 2;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 4px;
+            background-color: $mainColor;
+        }
+
+        .card {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            background-color: #ffffff;
+
+            &::before {
+                content: "";
+                display: none;
+                position: absolute;
+                top: 20px;
+                border-style: solid;
+                border-width: 10px;
+            }
+
+            &::after {
+                content: "";
+                width: 14px;
+                height: 14px;
+                display: none;
+                position: absolute;
+                top: 20px;
+                z-index: 2;
+                border: 3px solid $mainColor;
+                border-radius: 50%;
+                background-color: #ffffff;
+            }
+
+            &.left {
+                float: left;
+
+                &::before {
+                    right: 0;
+                    transform: translateX(100%);
+                    border-color: transparent transparent transparent #ffffff;
+                }
+
+                &::after {
+                    right: 0;
+                    transform: translateX(calc(50% + 25px));
+                }
+            }
+
+            &.right {
+                float: right;
+
+                &::before {
+                    left: 0;
+                    transform: translateX(-100%);
+                    border-color: transparent #ffffff transparent transparent;
+                }
+
+                &::after {
+                    left: 0;
+                    transform: translateX(calc(-50% - 25px));
+                }
+            }
+
+            h3 {
+                margin: 0 0 10px;
+                color: $mainColor;
+                text-transform: capitalize;
+            }
+
+            p {
+                margin: 0;
+                color: $fontColor;
+                line-height: 1.6;
+            }
+        }
+
+        .clear {
+            clear: both;
+        }
+    }
+}
+
+@include mediaQuery($mobile_min_width) {
+    @include setClass("#Timeline .timeline-content", $mobile_min_width)
+}
+
+@include mediaQuery($tablet_min_width) {
+    @include setClass("#Timeline .timeline-content .card", $tablet_min_width);
+    @include setClass("#Timeline .timeline-content .card::before", $tablet_min_width);
+    @include setClass("#Timeline .timeline-content .card::after", $tablet_min_width)
+}

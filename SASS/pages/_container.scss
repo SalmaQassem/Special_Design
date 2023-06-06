@@ -1,0 +1,19 @@
+@use "../variables/dimensions" as *;
+@use "../helpers/mediaQuery_mixin" as *;
+
+.container {
+    padding: 0 15px;
+    margin: auto;
+}
+
+$media: $mobile_min_width 540px, $tablet_min_width 720px, $smallScreens_min_width 960px, $largeScreens_min_width 1140px;
+
+@each $screen,
+$width in $media {
+    @include mediaQuery($screen) {
+        .container {
+            max-width: $width;
+        }
+
+    }
+}

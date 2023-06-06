@@ -1,0 +1,61 @@
+@use "../variables/colors" as *;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.15;
+}
+
+%condition {
+    width: 50px;
+    color: #ffffff;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: $mainColor;
+    opacity: 0.5;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+}
+
+%active {
+    opacity: 1;
+}
+
+.yes {
+    @extend %condition;
+
+    &.active {
+        @extend %active;
+    }
+}
+
+.no {
+    @extend %condition;
+
+    &.active {
+        @extend %active;
+    }
+}
+
+.head {
+    h2 {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: $mainColor;
+        margin: 0 0 50px;
+    }
+}

@@ -1,0 +1,53 @@
+@use "../variables/colors" as *;
+@use "../variables/dimensions" as *;
+@use "../helpers/mediaQuery_mixin" as *;
+@use "../helpers/setClass_mixin" as *;
+
+#About {
+    padding: $padding;
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .head {
+            width: 90%;
+            padding: 0;
+            flex: 1;
+            text-align: center;
+
+            h2 {
+                margin: 0 0 10px;
+            }
+
+            p {
+                margin: 0;
+                line-height: 1.8;
+                color: $fontColor;
+            }
+        }
+
+        .image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+
+@include mediaQuery($mobile_min_width) {
+    @include setClass("#About .about-us .head", $mobile_min_width)
+}
+
+@include mediaQuery($tablet_min_width) {
+    @include setClass("#About .about-us", $tablet_min_width);
+    @include setClass("#About .about-us .head", $tablet_min_width)
+}
