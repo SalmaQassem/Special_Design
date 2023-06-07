@@ -3,6 +3,7 @@
 @use "../helpers/mediaQuery_mixin" as *;
 @use "../helpers/setClass_mixin" as *;
 
+/*Start Timeline*/
 #Timeline {
     padding: $padding;
     background-color: $backgroundColor;
@@ -21,7 +22,7 @@
             top: 0;
             transform: translateX(-50%);
             z-index: 1;
-            background-color: $mainColor;
+            background-color: var(--mainColor);
         }
 
         .year {
@@ -34,7 +35,7 @@
             font-weight: bold;
             text-align: center;
             border-radius: 4px;
-            background-color: $mainColor;
+            background-color: var(--mainColor);
         }
 
         .card {
@@ -62,7 +63,7 @@
                 position: absolute;
                 top: 20px;
                 z-index: 2;
-                border: 3px solid $mainColor;
+                border: 3px solid var(--mainColor);
                 border-radius: 50%;
                 background-color: #ffffff;
             }
@@ -99,7 +100,7 @@
 
             h3 {
                 margin: 0 0 10px;
-                color: $mainColor;
+                color: var(--mainColor);
                 text-transform: capitalize;
             }
 
@@ -125,3 +126,5 @@
     @include setClass("#Timeline .timeline-content .card::before", $tablet_min_width);
     @include setClass("#Timeline .timeline-content .card::after", $tablet_min_width)
 }
+
+/*End Timeline*/

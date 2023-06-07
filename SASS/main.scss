@@ -1,7 +1,3 @@
-//Import all variables
-//@use "./variables/colors" as *;
-//@use "./variables/dimensions" as *;
-
 //Import global rules
 @use "./layout/global-rules";
 
@@ -24,7 +20,7 @@
 @use "./pages/about";
 
 //Import Skills
-@use "./pages/skill";
+@use "./pages/skills";
 
 //Import Gallery
 @use "./pages/gallery";

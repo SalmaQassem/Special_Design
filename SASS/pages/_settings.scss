@@ -1,3 +1,4 @@
+/*Start Settings*/
 .settings {
     width: 200px;
     min-height: 100vh;
@@ -75,7 +76,7 @@
                         border: 3px solid #ffffff;
                     }
 
-                    $bgColors: #e91e63, #009688, #03a9f4, #03a9f4;
+                    $bgColors: #ff9800, #e91e63, #009688, #03a9f4, #4caf50;
                     $index : 1;
 
                     @each $color in $bgColors {
@@ -115,3 +116,5 @@
         transform: rotate(360deg);
     }
 }
+
+/*End Settings*/

@@ -1,6 +1,7 @@
 @use "../variables/dimensions" as *;
 @use "../helpers/mediaQuery_mixin" as *;
 
+/*Start Container*/
 .container {
     padding: 0 15px;
     margin: auto;
@@ -17,3 +18,5 @@ $width in $media {
 
     }
 }
+
+/*End Container*/

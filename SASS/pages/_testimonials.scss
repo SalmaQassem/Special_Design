@@ -3,9 +3,10 @@
 @use "../helpers/mediaQuery_mixin" as *;
 @use "../helpers/setClass_mixin" as *;
 
+/*Start Testimonials*/
 #Testimonials {
     padding: 80px 0;
-    background-image: linear-gradient(to right, $mainColor 0%, $mainColor 50%, #333333 50%, #333333 100%);
+    background-image: linear-gradient(to right, var(--mainColor) 0%, var(--mainColor) 50%, #333333 50%, #333333 100%);
 
     .head {
         text-align: center;
@@ -57,7 +58,7 @@
                 .employees {
                     text-align: center;
 
-                    h4 {
+                    h3 {
                         margin: 14px 0 10px;
                         text-transform: capitalize;
                     }
@@ -84,5 +85,7 @@
 @include mediaQuery($smallScreens_min_width) {
     @include setClass("#Testimonials .testimonials-content .card .card-info", $smallScreens_min_width);
     @include setClass("#Testimonials .testimonials-content .card .card-info img", $smallScreens_min_width);
-    @include setClass("#Testimonials .testimonials-content .card .card-info .employees h4", $smallScreens_min_width);
+    @include setClass("#Testimonials .testimonials-content .card .card-info .employees h3", $smallScreens_min_width);
 }
+
+/*End Testimonials*/

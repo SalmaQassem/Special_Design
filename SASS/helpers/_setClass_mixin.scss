@@ -90,30 +90,6 @@
             }
         }
 
-        @else if $size ==$tablet_max_width {
-            @if $name =="#landing .nav-container .navbar .links-container .links.open" {
-                width: 100%;
-                padding: 10px;
-                position: absolute;
-                display: block;
-                left: 0;
-                top: 60px;
-                background-color: #ffffff;
-                border-radius: 4px;
-                text-align: left;
-            }
-
-            @else if $name =="#landing .nav-container .navbar .links-container .links.open::before" {
-                content: "";
-                position: absolute;
-                right: 20px;
-                top: -19px;
-                border-style: solid;
-                border-width: 10px;
-                border-color: transparent transparent #ffffff transparent;
-            }
-        }
-
         @else if $size ==$smallScreens_min_width {
             @if $name =="#landing .nav-container .navbar .links-container .toggleButton" {
                 display: none;

@@ -33,7 +33,11 @@ let closeBtn = document.querySelectorAll("#Gallery .full-image .close");
 /*End Global Variables*/
 
 /*Start Functions*/
-
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted && !document.cookie.match(/my-cookie/)) {
+    location.reload();
+  }
+});
 //**********Start Landing Page Functions**********
 function restoreLocalStorageValues() {
   restoreColor();
@@ -170,6 +174,9 @@ toggleBtn.addEventListener("click", (e) => {
   } else {
     navBar.classList.add("open");
   }
+});
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 992) navBar.classList.remove("open");
 });
 
 //Click anywhere outside toggle menu and toggle button to close

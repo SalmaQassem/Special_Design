@@ -3,6 +3,7 @@
 @use "../helpers/mediaQuery_mixin" as *;
 @use "../helpers/setClass_mixin" as *;
 
+/*Start About*/
 #About {
     padding: $padding;
 
@@ -51,3 +52,5 @@
     @include setClass("#About .about-us", $tablet_min_width);
     @include setClass("#About .about-us .head", $tablet_min_width)
 }
+
+/*End About*/

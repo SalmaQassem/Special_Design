@@ -1,6 +1,9 @@
 @use "../helpers/setOverlay_mixin" as *;
 
+/*Start Overlay*/
 .overlay {
     @include setOverlay(#000, 0.6);
     z-index: 1;
 }
+
+/*End Overlay*/

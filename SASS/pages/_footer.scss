@@ -3,6 +3,7 @@
 @use "../helpers/mediaQuery_mixin" as *;
 @use "../helpers/setClass_mixin" as *;
 
+/*Start Footer*/
 #Footer {
     padding: 20px;
     background-color: #333333;
@@ -15,3 +16,5 @@
 @include mediaQuery($mobile_min_width) {
     @include setClass("#Footer", $mobile_min_width)
 }
+
+/*End Footer*/

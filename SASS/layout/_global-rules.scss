@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+:root {
+    --mainColor: #ff9800;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -24,7 +28,7 @@ body {
     padding: 4px 10px;
     font-weight: bold;
     border-radius: 4px;
-    background-color: $mainColor;
+    background-color: var(--mainColor);
     opacity: 0.5;
     text-transform: capitalize;
     cursor: pointer;
@@ -55,7 +59,7 @@ body {
     h2 {
         text-transform: capitalize;
         font-size: 30px;
-        color: $mainColor;
+        color: var(--mainColor);
         margin: 0 0 50px;
     }
 }

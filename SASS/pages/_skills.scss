@@ -3,6 +3,7 @@
 @use "../helpers/mediaQuery_mixin" as *;
 @use "../helpers/setClass_mixin" as *;
 
+/*Start Skills*/
 #Skills {
     padding: $padding;
     background-color: $backgroundColor;
@@ -43,7 +44,7 @@
                     position: absolute;
                     left: 0;
                     top: 0;
-                    background-color: $mainColor;
+                    background-color: var(--mainColor);
                     transition: 0.7s;
                     transition-timing-function: linear;
                 }
@@ -60,3 +61,5 @@
     @include setClass("#Skills .mySkills .skill-box", $tablet_min_width);
     @include setClass("#Skills .mySkills .skill-box .skill-name", $tablet_min_width)
 }
+
+/*End Skills*/

@@ -1,409 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <meta name="description" content=" This Is Description For Special Design Project">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta
+      name="description"
+      content=" This Is Description For Special Design Project"
+    />
     <title>Special Design</title>
-</head>
-<body>
-<main>
-    <div class="settings close">
+  </head>
+  <body>
+    <main>
+      <div class="settings close">
         <div class="icon">
-            <div class="settings-icon">
-                <i class="fa-solid fa-gear"></i>
-            </div>
+          <div class="settings-icon">
+            <i class="fa-solid fa-gear"></i>
+          </div>
         </div>
         <div class="options">
-            <div class="option-box">
-                <h4>colors</h4>
-                <ul class="colors">
-                    <li class="color selected" data-color = "#ff9800"></li>
-                    <li class="color" data-color = "#e91e63"></li>
-                    <li class="color" data-color = "#009688"></li>
-                    <li class="color" data-color = "#03a9f4"></li>
-                    <li class="color" data-color = "#4caf50"></li>
-                </ul>
+          <div class="option-box">
+            <h4>colors</h4>
+            <ul class="colors">
+              <li class="color selected" data-color="#ff9800"></li>
+              <li class="color" data-color="#e91e63"></li>
+              <li class="color" data-color="#009688"></li>
+              <li class="color" data-color="#03a9f4"></li>
+              <li class="color" data-color="#4caf50"></li>
+            </ul>
+          </div>
+          <div class="option-box">
+            <h4>random backgrounds</h4>
+            <div class="rbButtons">
+              <button class="yes opBtn active">yes</button>
+              <button class="no opBtn">no</button>
             </div>
-            <div class="option-box">
-                <h4>random backgrounds</h4>
-                <div class="rbButtons">
-                    <button class="yes opBtn active">yes</button>
-                    <button class="no opBtn">no</button>
-                </div>
+          </div>
+          <div class="option-box">
+            <h4>show bullets</h4>
+            <div class="sbButtons">
+              <button class="yes opBtn active">yes</button>
+              <button class="no opBtn">no</button>
             </div>
-            <div class="option-box">
-                <h4>show bullets</h4>
-                <div class="sbButtons">
-                    <button class="yes opBtn active">yes</button>
-                    <button class="no opBtn">no</button>
-                </div>
-            </div>
-            <button class="reset">reset options</button>
+          </div>
+          <button class="reset">reset options</button>
         </div>
-    </div>
-    <div class="bulletsContainer">
-        <div data = "About Us">
-            <a href="#About"></a>
+      </div>
+      <div class="bulletsContainer">
+        <div data="About Us">
+          <a href="#About" aria-label="about section"></a>
         </div>
-        <div data = "Our Skills">
-            <a href="#Skills"></a>
+        <div data="Our Skills">
+          <a href="#Skills" aria-label="skills section"></a>
         </div>
-        <div data = "Our Gallery">
-            <a href="#Gallery"></a>
+        <div data="Our Gallery">
+          <a href="#Gallery" aria-label="gallery section"></a>
         </div>
-        <div data = "Timeline">
-            <a href="#Timeline"></a>
+        <div data="Timeline">
+          <a href="#Timeline" aria-label="timeline section"></a>
         </div>
-        <div data = "Features">
-            <a href="#Features"></a>
+        <div data="Features">
+          <a href="#Features" aria-label="features section"></a>
         </div>
-        <div data = "Testimonials">
-            <a href="#Testimonials"></a>
+        <div data="Testimonials">
+          <a href="#Testimonials" aria-label="testimonials section"></a>
         </div>
-        <div data = "Contact Us">
-            <a href="#Contact"></a>
+        <div data="Contact Us">
+          <a href="#Contact" aria-label="contact section"></a>
         </div>
-    </div>
-    <section id="landing">
+      </div>
+      <section id="landing">
         <div class="overlay"></div>
         <nav>
-            <div class="nav-container container">
-                <div class="navbar">
-                    <span class="header">special design</span>
-                    <div class="links-container">
-                        <div class="toggleButton">
-                            <i class="fa-solid fa-bars toggleIcon"></i>
-                        </div>
-                        <ul class="links">
-                            <li>
-                                <a href="#About">about</a>
-                            </li>
-                            <li>
-                                <a href="#Skills">skills</a>
-                            </li>
-                            <li>
-                                <a href="#Gallery">gallery</a>
-                            </li>
-                            <li>
-                                <a href="#Timeline">timeline</a>
-                            </li>
-                            <li>
-                                <a href="#Features">features</a>
-                            </li>
-                            <li>
-                                <a href="#Testimonials">testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#Contact">contact us</a>
-                            </li>
-                        </ul>
-                    </div>
+          <div class="nav-container container">
+            <div class="navbar">
+              <span class="header">special design</span>
+              <div class="links-container">
+                <div class="toggleButton">
+                  <i class="fa-solid fa-bars toggleIcon"></i>
                 </div>
+                <ul class="links">
+                  <li>
+                    <a href="#About">about</a>
+                  </li>
+                  <li>
+                    <a href="#Skills">skills</a>
+                  </li>
+                  <li>
+                    <a href="#Gallery">gallery</a>
+                  </li>
+                  <li>
+                    <a href="#Timeline">timeline</a>
+                  </li>
+                  <li>
+                    <a href="#Features">features</a>
+                  </li>
+                  <li>
+                    <a href="#Testimonials">testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#Contact">contact us</a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </nav>
         <div class="text">
-            <h1>we are <span>creative</span> agency</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus odit nihil ullam nesciunt quidem iste</p>
+          <h1>we are <span>creative</span> agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            odit nihil ullam nesciunt quidem iste
+          </p>
         </div>
-    </section>
-    <section id="About">
+      </section>
+      <section id="About">
         <div class="container">
-            <div class="about-us">
-                <div class="head">
-                    <h2>about us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non voluptate id?</p>
-                </div>
-                <div class="image">
-                    <img src="images/about-us.webp" alt="" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Skills">
-        <div class="container">
+          <div class="about-us">
             <div class="head">
-                <h2>our skills</h2>
+              <h2>about us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis ipsum, tenetur dolores esse magni ratione
+                distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam
+                dicta deserunt blanditiis non voluptate id?
+              </p>
             </div>
-            <div class="mySkills">
-                <div class="skill-box">
-                    <div class="skill-name">HTML</div>
-                    <div class="bar">
-                        <span progress=80%></span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">CSS</div>
-                    <div class="bar">
-                        <span progress=70%></span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">JavaScript</div>
-                    <div class="bar">
-                        <span progress=90%></span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">Python</div>
-                    <div class="bar">
-                        <span progress=80%></span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">PHP</div>
-                    <div class="bar">
-                        <span progress=90%></span>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-name">MySQL</div>
-                    <div class="bar">
-                        <span progress=70%></span>
-                    </div>
-                </div>
+            <div class="image">
+              <img src="images/about-us.webp" alt="" loading="lazy" />
             </div>
+          </div>
         </div>
-    </section>
-    <section id="Gallery">
+      </section>
+      <section id="Skills">
         <div class="container">
-            <div class="head">
-                <h2>our gallery</h2>
+          <div class="head">
+            <h2>our skills</h2>
+          </div>
+          <div class="mySkills">
+            <div class="skill-box">
+              <div class="skill-name">HTML</div>
+              <div class="bar">
+                <span progress="80%"></span>
+              </div>
             </div>
-            <div class="images">
-                <div class="image">
-                    <img src="images/01.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image one</h3>
-                        <img src="images/01.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/02.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image two</h3>
-                        <img src="images/02.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/03.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image three</h3>
-                        <img src="images/03.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/04.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image four</h3>
-                        <img src="images/04.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/05.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image five</h3>
-                        <img src="images/05.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/06.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image six</h3>
-                        <img src="images/06.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/07.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image seven</h3>
-                        <img src="images/07.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/08.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image eight</h3>
-                        <img src="images/08.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/09.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image nine</h3>
-                        <img src="images/09.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
-                <div class="image">
-                    <img src="images/10.webp" alt="">
-                    <div class="full-image">
-                        <h3 class="image-title">image ten</h3>
-                        <img src="images/10.webp" alt="" loading="lazy">
-                        <div class="close">X</div>
-                    </div>
-                    <div class="image-overlay"></div>
-                </div>
+            <div class="skill-box">
+              <div class="skill-name">CSS</div>
+              <div class="bar">
+                <span progress="70%"></span>
+              </div>
             </div>
+            <div class="skill-box">
+              <div class="skill-name">JavaScript</div>
+              <div class="bar">
+                <span progress="90%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">Python</div>
+              <div class="bar">
+                <span progress="80%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">PHP</div>
+              <div class="bar">
+                <span progress="90%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">MySQL</div>
+              <div class="bar">
+                <span progress="70%"></span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="Timeline">
+      </section>
+      <section id="Gallery">
         <div class="container">
-            <div class="timeline-content">
-                <div class="line"></div>
-                <div class="year">2018</div>
-                <div class="card left">
-                    <h3>testing heading</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
-                </div>
-                <div class="clear"></div>
-                <div class="card right">
-                    <h3>testing heading</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
-                </div>
-                <div class="clear"></div>
-                <div class="year">2016</div>
-                <div class="card left">
-                    <h3>testing heading</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
-                </div>
-                <div class="clear"></div>
-                <div class="card left">
-                    <h3>testing heading</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid eligendi. Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime nobis quam?</p>
-                </div>
-                <div class="clear"></div>
+          <div class="head">
+            <h2>our gallery</h2>
+          </div>
+          <div class="images">
+            <div class="image">
+              <img src="images/01_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image one</h3>
+                <img src="images/01.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
             </div>
+            <div class="image">
+              <img src="images/02_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image two</h3>
+                <img src="images/02.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/03_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image three</h3>
+                <img src="images/03.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/04_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image four</h3>
+                <img src="images/04.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/05_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image five</h3>
+                <img src="images/05.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/06_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image six</h3>
+                <img src="images/06.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/07_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image seven</h3>
+                <img src="images/07.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/08_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image eight</h3>
+                <img src="images/08.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/09_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image nine</h3>
+                <img src="images/09.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+            <div class="image">
+              <img src="images/10_250x150.webp" alt="" />
+              <div class="full-image">
+                <h3 class="image-title">image ten</h3>
+                <img src="images/10.webp" alt="" loading="lazy" />
+                <div class="close">X</div>
+              </div>
+              <div class="image-overlay"></div>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="Features">
+      </section>
+      <section id="Timeline">
         <div class="container">
-            <div class="head">
-                <h2>our features</h2>
+          <div class="timeline-content">
+            <div class="line"></div>
+            <div class="year">2018</div>
+            <div class="card left">
+              <h3>testing heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
             </div>
-            <div class="features-content">
-                <div class="feature">
-                    <img src="images/programming.svg" alt="" loading="lazy">
-                    <h4>development</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
-                <div class="feature">
-                    <img src="images/advertising.svg" alt="" loading="lazy">
-                    <h4>marketing</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
-                <div class="feature">
-                    <img src="images/hosting-icon.svg" alt="" loading="lazy">
-                    <h4>hosting</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
-                <div class="feature">
-                    <img src="images/mobile-app.svg" alt="" loading="lazy">
-                    <h4>mobile development</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
-                <div class="feature">
-                    <img src="images/graphic-design.svg" alt="" loading="lazy">
-                    <h4>cloud and servers</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
-                <div class="feature">
-                    <img src="images/web-design.svg" alt="" loading="lazy">
-                    <h4>seo</h4>
-                    <p>We are professional marketeers, we will do anything you imagine in no time.</p>
-                </div>
+            <div class="clear"></div>
+            <div class="card right">
+              <h3>testing heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
             </div>
+            <div class="clear"></div>
+            <div class="year">2016</div>
+            <div class="card left">
+              <h3>testing heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+            <div class="clear"></div>
+            <div class="card left">
+              <h3>testing heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
         </div>
-    </section>
-    <section id="Testimonials">
+      </section>
+      <section id="Features">
         <div class="container">
-            <div class="head">
-                <h2>testimonials</h2>
+          <div class="head">
+            <h2>our features</h2>
+          </div>
+          <div class="features-content">
+            <div class="feature">
+              <img src="images/programming.svg" alt="" loading="lazy" />
+              <h3>development</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
             </div>
-            <div class="testimonials-content">
-                <div class="card">
-                    <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
-                    <div class="card-info">
-                        <img src="images/profile.webp" alt="" loading="lazy">
-                        <div class="employees">
-                            <h4>ahmed mosaad</h4>
-                            <p>CEO At Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
-                    <div class="card-info">
-                        <img src="images/profile.webp" alt="" loading="lazy">
-                        <div class="employees">
-                            <h4>mohamed ibrahim</h4>
-                            <p>CEO At Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <p>Iam very happy with the product its amazing and i recieve it very fast and the price was amazing.</p>
-                    <div class="card-info">
-                        <img src="images/profile.webp" alt="" loading="lazy">
-                        <div class="employees">
-                            <h4>sherief ashraf</h4>
-                            <p>CEO At Company</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="feature">
+              <img src="images/advertising.svg" alt="" loading="lazy" />
+              <h3>marketing</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
             </div>
+            <div class="feature">
+              <img src="images/hosting-icon.svg" alt="" loading="lazy" />
+              <h3>hosting</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="images/mobile-app.svg" alt="" loading="lazy" />
+              <h3>mobile development</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="images/graphic-design.svg" alt="" loading="lazy" />
+              <h3>cloud and servers</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="images/web-design.svg" alt="" loading="lazy" />
+              <h3>seo</h3>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
-    <section id="Contact">
+      </section>
+      <section id="Testimonials">
+        <div class="container">
+          <div class="head">
+            <h2>testimonials</h2>
+          </div>
+          <div class="testimonials-content">
+            <div class="card">
+              <p>
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="card-info">
+                <img src="images/profile.webp" alt="" loading="lazy" />
+                <div class="employees">
+                  <h3>ahmed mosaad</h3>
+                  <p>CEO At Company</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <p>
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="card-info">
+                <img src="images/profile.webp" alt="" loading="lazy" />
+                <div class="employees">
+                  <h3>mohamed ibrahim</h3>
+                  <p>CEO At Company</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <p>
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="card-info">
+                <img src="images/profile.webp" alt="" loading="lazy" />
+                <div class="employees">
+                  <h3>sherief ashraf</h3>
+                  <p>CEO At Company</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Contact">
         <div class="overlay"></div>
         <div class="container">
-            <div class="head">
-                <h2>contact us</h2>
+          <div class="head">
+            <h2>contact us</h2>
+          </div>
+          <form action="">
+            <div class="left">
+              <input type="text" placeholder="Your Name" name="name" />
+              <input type="text" placeholder="Your Phone" name="phone" />
+              <input type="email" placeholder="Your Email" name="email" />
+              <input type="text" placeholder="Subject" name="subject" />
             </div>
-            <form action="">
-                <div class="left">
-                    <input type="text" placeholder="Your Name" name="name">
-                    <input type="text" placeholder="Your Phone" name="phone">
-                    <input type="email" placeholder="Your Email" name="email">
-                    <input type="text" placeholder="Subject" name="subject">
-                </div>
-                <div class="right">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
-                </div>
-            </form>
+            <div class="right">
+              <textarea placeholder="Your Message"></textarea>
+              <input type="submit" value="Send" />
+            </div>
+          </form>
         </div>
-    </section>
-    <section id="Footer">created with love by salma qassem</section>
-</main>
-<!--Main Css File-->
-<link rel="stylesheet" href="SASS/main.css" type="text/css"/>
-<!--Fontawesome Library-->
-<link rel="stylesheet" href="CSS/all.min.css"/>
-<!--Main Javascript File-->
-<script src="JS/JS.js" async></script>
-<!--Fonts Link-->
-<link rel="preconnect" href="https://fonts.googleapis.com" type="text/css">
-<link rel="preconnect" href="https://fonts.gstatic.com" type="text/css" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet" type="text/css">
-</body>
+      </section>
+      <section id="Footer">created with love by salma qassem</section>
+    </main>
+    <!--Main Css File-->
+    <link rel="stylesheet" href="SASS/main.min.css" type="text/css" />
+    <!--Fontawesome Library-->
+    <link rel="stylesheet" href="CSS/all.min.css" type="text/css" />
+    <!--Fonts Link-->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      type="text/css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      type="text/css"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Main Javascript File-->
+    <!--<script defer src="JS/JS.min.js"></script>-->
+  </body>
 </html>

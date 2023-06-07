@@ -1,6 +1,7 @@
 @use "../variables/dimensions" as *;
 @use "../variables/colors" as *;
 
+/*Start Gallery*/
 #Gallery {
     padding: $padding;
     text-align: center;
@@ -11,15 +12,14 @@
         flex-wrap: wrap;
 
         .image {
-            width: 200px;
             margin: 8px;
             border: 3px solid #f6f6f6;
             outline: 1px solid #cccccc;
 
 
             >img {
-                width: 100%;
-                height: 100%;
+                width: 200px;
+                height: 120px;
                 cursor: pointer;
             }
 
@@ -40,7 +40,7 @@
                     h3 {
                         margin: 0 0 20px;
                         text-transform: capitalize;
-                        color: $mainColor;
+                        color: var(--mainColor);
                     }
 
                     img {
@@ -57,7 +57,7 @@
                         position: absolute;
                         right: -15px;
                         top: -15px;
-                        background-color: $mainColor;
+                        background-color: var(--mainColor);
                         color: #ffffff;
                         font-weight: bold;
                         font-size: 20px;
@@ -79,3 +79,5 @@
         }
     }
 }
+
+/*End Gallery*/
